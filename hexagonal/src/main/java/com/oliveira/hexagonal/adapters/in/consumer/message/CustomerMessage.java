@@ -9,14 +9,14 @@ public class CustomerMessage {
     private String name;
     private String zipCode;
     private String cpf;
-    private Boolean insValidCpf;
+    private Boolean isValidCpf;
 
-    public CustomerMessage(String id, String name, String zipCode, String cpf, Boolean insValidCpf) {
+    public CustomerMessage(String id, String name, String zipCode, String cpf, Boolean isValidCpf) {
         this.id = id;
         this.name = name;
         this.zipCode = zipCode;
         this.cpf = cpf;
-        this.insValidCpf = insValidCpf;
+        this.isValidCpf = isValidCpf;
     }
 
     public CustomerMessage() {
@@ -55,10 +55,10 @@ public class CustomerMessage {
     }
 
     public Boolean getInsValidCpf() {
-        return insValidCpf;
+        return isValidCpf;
     }
 
-    public void setInsValidCpf(Boolean insValidCpf) {
-        this.insValidCpf = insValidCpf;
+    public void setInsValidCpf(Boolean isValidCpf) {
+        this.isValidCpf = isValidCpf;
     }
 }
