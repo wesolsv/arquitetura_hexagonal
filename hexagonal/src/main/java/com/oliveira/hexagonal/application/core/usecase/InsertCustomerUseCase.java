@@ -4,7 +4,7 @@ import com.oliveira.hexagonal.application.core.domain.Customer;
 import com.oliveira.hexagonal.application.ports.in.InsertCustomerInputPort;
 import com.oliveira.hexagonal.application.ports.out.FindAddressByZipCodeOutputPort;
 import com.oliveira.hexagonal.application.ports.out.InsertCustomerOutputPort;
-import com.oliveira.hexagonal.application.ports.out.SendCpfForValidationOutPutPort;
+import com.oliveira.hexagonal.application.ports.out.SendCpfForValidationOutputPort;
 
 public class InsertCustomerUseCase implements InsertCustomerInputPort {
 
@@ -12,9 +12,9 @@ public class InsertCustomerUseCase implements InsertCustomerInputPort {
 
     private final InsertCustomerOutputPort insertCustomerOutputPort;
 
-    private final SendCpfForValidationOutPutPort sendCpfForValidationOutPutPort;
+    private final SendCpfForValidationOutputPort sendCpfForValidationOutPutPort;
 
-    public InsertCustomerUseCase(FindAddressByZipCodeOutputPort findAddressByZipCodeOutputPort, InsertCustomerOutputPort insertCustomerOutputPort, SendCpfForValidationOutPutPort sendCpfForValidationOutPutPort) {
+    public InsertCustomerUseCase(FindAddressByZipCodeOutputPort findAddressByZipCodeOutputPort, InsertCustomerOutputPort insertCustomerOutputPort, SendCpfForValidationOutputPort sendCpfForValidationOutPutPort) {
         this.findAddressByZipCodeOutputPort = findAddressByZipCodeOutputPort;
         this.insertCustomerOutputPort = insertCustomerOutputPort;
         this.sendCpfForValidationOutPutPort = sendCpfForValidationOutPutPort;

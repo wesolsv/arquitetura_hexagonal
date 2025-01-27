@@ -1,6 +1,6 @@
 package com.oliveira.hexagonal.application.ports.out;
 
-public interface SendCpfForValidationOutPutPort {
+public interface SendCpfForValidationOutputPort {
 
     void send(String cpf);
 }
